@@ -1,0 +1,84 @@
+$dark-green : #075e54
+$message-right : #dcf8c6
+html
+  margin-bottom: 5%
+  padding-top: 5%
+.header
+  height: 10%
+  background-color: $dark-green
+  position: fixed
+  top: 0
+  width: 100%
+  display: flex
+  .logo
+    height: 60%
+    margin: 1% 1%
+  h1
+    color: #fff
+    line-height: 75%
+  .name
+    line-height: 75%
+    height: 50%
+    margin: 1.5% 0% 1% 1%
+    border: none
+    background-color: inherit
+    color: white
+    font-weight: bold
+    font-size: 150%
+    text-transform: capitalize
+    //border: 2px solid red
+    width: 100%
+    text-align: center
+  input:focus
+    outline: none
+  input::placeholder
+    color: gray
+    font-size: 100%
+    font-weight: lighter
+.message
+  position: fixed
+  bottom: 0
+  width: 91%
+  margin-bottom: 1%
+  margin-left: 4.5%
+  margin-right: 4.5%
+  height: 50px
+  padding-left: 1%
+  border-top-right-radius: 2em
+  border-top-left-radius: 2em
+  border-bottom-right-radius: 2em
+  border-bottom-left-radius: 2em
+  border: 2px solid gray
+.message:focus
+  outline: none
+.left
+  border: 2px solid black
+  margin-bottom: 1%
+  margin-left: 0.5%
+  position: fixed
+  bottom: 0
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  background-color: black
+.left:focus
+  outline: none
+.right
+  border: 2px solid black
+  margin-bottom: 1%
+  margin-left: 96%
+  position: fixed
+  bottom: 0
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  background-color: $message-right
+.right:focus
+  outline: none
+.clear
+  width: 50px
+  height: 50px
+  position: fixed
+  bottom: 0
+  margin-bottom: 1%
+  margin-left: 91%
