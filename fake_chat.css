@@ -1,10 +1,15 @@
-/* line 3, fake_chat.sass */
+/* line 4, fake_chat.sass */
 html {
   margin-bottom: 5%;
   padding-top: 5%;
 }
 
-/* line 6, fake_chat.sass */
+/* line 7, fake_chat.sass */
+.break {
+  visibility: hidden;
+}
+
+/* line 9, fake_chat.sass */
 .header {
   height: 10%;
   background-color: #075e54;
@@ -13,22 +18,23 @@ html {
   width: 100%;
   display: flex;
 }
-/* line 13, fake_chat.sass */
+/* line 16, fake_chat.sass */
 .header .logo {
   height: 60%;
   margin: 1% 1%;
 }
-/* line 16, fake_chat.sass */
+/* line 19, fake_chat.sass */
 .header h1 {
   color: white;
   line-height: 75%;
+  font-size: 30px;
 }
-/* line 19, fake_chat.sass */
+/* line 23, fake_chat.sass */
 .header .name {
+  border: none;
   line-height: 75%;
   height: 50%;
   margin: 1.5% 0% 1% 1%;
-  border: none;
   background-color: inherit;
   color: white;
   font-weight: bold;
@@ -37,25 +43,25 @@ html {
   width: 100%;
   text-align: center;
 }
-/* line 32, fake_chat.sass */
+/* line 35, fake_chat.sass */
 .header input:focus {
   outline: none;
 }
-/* line 34, fake_chat.sass */
+/* line 37, fake_chat.sass */
 .header input::placeholder {
   color: gray;
   font-size: 100%;
   font-weight: lighter;
 }
 
-/* line 38, fake_chat.sass */
+/* line 41, fake_chat.sass */
 .message {
   position: fixed;
   bottom: 0;
-  width: 91%;
-  margin-bottom: 1%;
-  margin-left: 4.5%;
-  margin-right: 4.5%;
+  width: 98%;
+  margin-bottom: 45px;
+  margin-left: 1%;
+  margin-right: 1%;
   height: 50px;
   padding-left: 1%;
   border-top-right-radius: 2em;
@@ -63,55 +69,97 @@ html {
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   border: 2px solid gray;
+  font-size: 18px;
 }
 
-/* line 52, fake_chat.sass */
+/* line 56, fake_chat.sass */
 .message:focus {
   outline: none;
 }
 
-/* line 54, fake_chat.sass */
+/* line 58, fake_chat.sass */
 .left {
-  border: 2px solid black;
-  margin-bottom: 1%;
-  margin-left: 0.5%;
+  margin-left: 1%;
   position: fixed;
   bottom: 0;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: white;
+  width: 40%;
+  height: 40px;
+  background-color: mintcream;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-/* line 64, fake_chat.sass */
+/* line 69, fake_chat.sass */
 .left:focus {
   outline: none;
 }
 
-/* line 66, fake_chat.sass */
+/* line 71, fake_chat.sass */
 .right {
-  border: 2px solid black;
-  margin-bottom: 1%;
-  margin-left: 96%;
+  margin-left: 59%;
   position: fixed;
   bottom: 0;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40%;
+  height: 40px;
   background-color: #dcf8c6;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-/* line 76, fake_chat.sass */
+/* line 82, fake_chat.sass */
 .right:focus {
   outline: none;
 }
 
-/* line 78, fake_chat.sass */
+/* line 84, fake_chat.sass */
 .clear {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: fixed;
   bottom: 0;
-  margin-bottom: 1%;
-  margin-left: 91%;
+  margin-left: 47%;
+}
+
+@media screen and (max-width: 520px) {
+  /* line 92, fake_chat.sass */
+  .message {
+    font-size: 12px;
+  }
+
+  /* line 94, fake_chat.sass */
+  .header {
+    height: 10%;
+    flex-direction: column;
+  }
+  /* line 97, fake_chat.sass */
+  .header h1 {
+    width: 100%;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 102, fake_chat.sass */
+  .header .name {
+    margin-left: 0;
+    width: 100%;
+    border: none;
+  }
+  /* line 106, fake_chat.sass */
+  .header .logo {
+    display: none;
+  }
+
+  /* line 108, fake_chat.sass */
+  .break {
+    visibility: visible;
+  }
+
+  /* line 110, fake_chat.sass */
+  html {
+    margin-top: 10%;
+  }
 }

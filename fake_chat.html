@@ -5,11 +5,13 @@
   <link type="text/css" href="fake_chat.css" rel="stylesheet" />
   <style> body {padding: 0; margin: 0;} </style>
 </head>
-<body>
+<body id="deleteTarget">
+  <br class="break">
+  <br class="break">
   <div class="header">
-    <img src="images/logo.png" alt="whatsapp" class="logo">
+    <img src="images/logo.png" alt="fakechat" class="logo">
     <h1>FakeChat</h1>
-    <input type="text" name="name" placeholder="enter the name..." class="name" id="name" onchange="ChangeName()">
+    <input type="text" name="name" placeholder="enter the name..." class="name" id="name">
   </div>
   <button type="button" name="left" id="left" class="left" onclick="SelectLeftSide()"></button>
   <button type="button" name="right" id="right" class="right" onclick="SelectRightSide()"></button>

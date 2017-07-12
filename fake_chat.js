@@ -4,14 +4,14 @@ function SelectLeftSide(){
     var t = document.createTextNode(document.getElementById("message").value);
     Paragraph.appendChild(t);
     document.body.appendChild(Paragraph);
-    Object.assign(document.body.appendChild(Paragraph).style,{margin: "2px 20% 1% 1%",
+    Object.assign(document.body.appendChild(Paragraph).style,{margin: "2px 20% 2.5% 1%",
       padding: "1%",
       'border-top-right-radius': '2em',
       'border-top-left-radius': "2em",
       'border-bottom-right-radius': "2em",
       'border-bottom-left-radius': "2em",
       'word-wrap': 'break-word',
-      'background-color':'white',
+      'background-color':'#f5fffa',
       'color' : 'black'});
       window.scrollTo(0,document.body.scrollHeight);
       document.getElementById("message").value="";
@@ -26,7 +26,7 @@ function SelectRightSide(){
     var t = document.createTextNode(document.getElementById("message").value);
     Paragraph.appendChild(t);
     document.body.appendChild(Paragraph);
-    Object.assign(document.body.appendChild(Paragraph).style,{margin: "2px 1% 1% 20%",
+    Object.assign(document.body.appendChild(Paragraph).style,{margin: "2px 1% 2.5% 20%",
       padding: "1%",
       'border-top-right-radius': '2em',
       'border-top-left-radius': "2em",
@@ -42,12 +42,9 @@ function SelectRightSide(){
     }
 }
 function DeleteMessage(){
-  var list = document.getElementById("message");
-  if(list.childNodes.length>9){
+  var list = document.getElementById("deleteTarget");
+  if(list.childNodes.length>16){
   list.removeChild(list.childNodes[list.childNodes.length-1]);
+  //console.log(list.childNodes.length);
  }
-}
-function ChangeName(){
-  var x = document.getElementById("name");
-  x.text=(x.text+' .') ;
 }
