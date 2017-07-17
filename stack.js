@@ -74,7 +74,7 @@ function pushElement() {
     console.log("length = "+Rectangles.length);
 }
 function popElement(){
-    Rectangles[i].moveUp();//Uncaught TypeError: Cannot read property 'moveUp' of undefined
+    //Rectangles[i].moveUp();//Uncaught TypeError: Cannot read property 'moveUp' of undefined
     i--;
 
     Rectangles.splice(-1,1);
