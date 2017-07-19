@@ -28,7 +28,7 @@ function Rectangle(){
 
         }
     }
-    this.moveUp= function(){
+    this.moveup= function(){
         map(this.col,255-this.i,0,200,this.i);
         fill(this.col);
         if(this.y>200){
@@ -46,7 +46,6 @@ function Rectangle(){
 }
 function setup(){
     createCanvas(w,600);
-
 }
 function draw(){
     background(0);
@@ -74,9 +73,8 @@ function pushElement() {
     console.log("length = "+Rectangles.length);
 }
 function popElement(){
-    //Rectangles[i].moveUp();//Uncaught TypeError: Cannot read property 'moveUp' of undefined
+    //Rectangles[i].moveup();   //Uncaught TypeError: Cannot read property 'moveUp' of undefined
     i--;
-
     Rectangles.splice(-1,1);
     if(Rectangles.length<=0){
         Rectangles.length=0;
